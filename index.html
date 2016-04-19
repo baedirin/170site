@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+<meta name= "ROBOTS" content= "NOINDEX, NOFOLLOW">
+<title>FP: Code</title>
+<link rel= "stylesheet" href= "styles/navstyles.css"/>
+<link rel= "stylesheet" href= "styles/templatestyles.css"/>
+</head>
+<body>
+<header id="navHeader">
+    <div>
+        <h1 id="siteTitle"><a href= "index.html">Jayne Strange</a></h1>
+        <img id= "siteBanner" alt= "banner" src= "images/placekitten1.jpg"/>
+    </div>
+    <div id= "subHeader">
+       <h1 id= "pageTitle">About Jayne</h1>
+       <a href="#" id= "hamburger" class="menu-link">&#9776;</a>
+    </div>
+</header>
+<div id= "leftContainer">
+<a href= "template.html"><img alt= "logo" id= "siteLogo" src= "images/samplelogo.jpg"/></a>
+<nav id= "cssmenu">
+	<ul>
+    	<li class="active"><a href="#"><span>About Jayne</span></a></li>
+   		<li class="has-sub"><a href="#"><span>About</span></a>
+            <ul>
+              <li><a href="#"><span>About Jayne</span></a></li>
+              <li><a href="#"><span>Resume/CW</span></a></li>
+            </ul>
+      	</li>
+        <li class="has-sub"><a href="#"><span>Gallery</span></a>
+          	<ul>
+              <li><a href="#"><span>Personal Artwork</span></a></li>
+              <li><a href="#"><span>Commission Artwork</span></a></li>
+            </ul>
+      	</li>
+        <li class="has-sub"><a href="#"><span>Products</span></a>
+            <ul>
+              <li><a href="#"><span>Pricing and Info</span></a></li>
+            </ul>
+      	</li>
+        <li class="has-sub"><a href="#"><span>Contact</span></a>
+            <ul>
+              <li><a href="#"><span>Info</span></a></li>
+            </ul>
+      	</li>
+    </ul>
+</nav>
+</div>
+<div id= "mainContent">
+    <article>
+    <h2>Nulla sed ultrices</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ligula auctor, pellentesque nisl quis, porta metus. Nullam tincidunt eu dolor nec porttitor.       Aenean tincidunt urna ut arcu suscipit, nec aliquet tortor egestas. Sed a gravida metus. Donec elit diam, viverra sit amet pulvinar at, congue non nisl. Fusce sit       amet arcu ut felis imperdiet bibendum sed quis est. Aenean ullamcorper scelerisque sem, id fermentum odio luctus ut. Praesent ultrices sodales augue, egestas       scelerisque metus congue ultricies. Nunc hendrerit risus odio, vehicula dapibus magna placerat quis. Pellentesque tellus velit, rutrum non tincidunt ut, consectetur a diam. Sed eget nisl auctor ante consectetur laoreet in eget nibh. Donec turpis est, aliquet sit amet mauris non, consectetur pellentesque urna. Vestibulum aliquet lorem sed aliquam cursus. Morbi ullamcorper placerat nisl, sit amet tristique massa facilisis nec. Pellentesque mattis tellus eu bibendum elementum. Mauris ipsum nisi, ullamcorper quis cursus in, dapibus at augue.</p>
+    <img src= "images/jayne.jpg" id= "jayne" alt= "A photo of Jayne Strange!"/>
+    <p>Phasellus arcu elit, aliquam in diam vel, interdum dignissim ligula. Nam posuere risus lectus, id vehicula magna varius a. Morbi convallis purus eu porttitor placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur rhoncus nisi nec porta volutpat. Ut pharetra tortor quis elit aliquet, auctor blandit sem efficitur. Sed porttitor augue tellus, et sodales purus varius at.
+
+Cras porta enim sit amet diam scelerisque tincidunt. Vestibulum ullamcorper purus ipsum, nec commodo ante porttitor eget. Sed posuere eros vitae nibh fermentum iaculis dapibus nec nisi. Quisque ac viverra orci, sed mattis massa. Ut fermentum ullamcorper mollis. Curabitur vehicula sapien eget odio vestibulum viverra. Proin vestibulum, purus vitae dictum venenatis, massa erat accumsan mauris, eu pharetra tortor leo sit amet augue.</p>
+    </article>
+	<footer>
+  		<p>© Brittaney Nico Davis, 2016</p>
+  		<p><a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> and <a href="http://validator.w3.org/check/referer">Valid HTML5</a></p>
+	</footer>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src= "script/navscript.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".menu-link").click(function(){
+			$("#leftContainer").toggleClass("expanded");
+			});
+		});
+</script>
+</div>
+</body>
+</html>
